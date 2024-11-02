@@ -1,6 +1,6 @@
 import os
 
-from pymongo import MongoClient
+from pymongo import MongoClient, ASCENDING
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -15,4 +15,10 @@ def get_mongo_client():
 
 def get_note_collection():
     client = get_mongo_client()
-    return client["note_manager_db"]["notes"]
+    collection = client["note_manager_db"]["notes"]
+    create_indexes(collection)
+    return collection
+
+
+def create_indexes(collection):
+    collection.create_index([("title", ASCENDING)], unique=True)
