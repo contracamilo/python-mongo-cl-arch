@@ -13,29 +13,29 @@ A simple, modularized note management application built using Python and MongoDB
 ## Project Structure
 
 The project is structured based on **Clean Architecture** principles, separating different layers of the application for better scalability and maintainability.
-
-note_manager/
-├── .venv/                         # Virtual environment
-├── core/
-│   ├── __init__.py
-│   ├── entities/
-│   │   ├── __init__.py
-│   │   └── note.py                # Note model
-│   └── repositories/
-│       ├── __init__.py
-│       └── note_repository.py     # Repository interface for notes
-├── use_cases/
-│   ├── __init__.py
-│   └── note_use_cases.py          # Business logic and use cases (CRUD)
-├── interface_adapters/
-│   ├── __init__.py
-│   └── mongo_note_repository.py   # MongoDB repository implementation for notes
-├── frameworks/
-│   ├── __init__.py
-│   ├── database.py                # MongoDB configuration and connection
-│   └── cli.py                     # Command-line interface (CLI)
-├── main.py                        # Entry point for the application
-└── requirements.txt               # Python dependencies
+   ```bash
+   note_manager/
+   ├── .venv/                         # Virtual environment
+   ├── core/
+   │   ├── __init__.py
+   │   ├── entities/
+   │   │   ├── __init__.py
+   │   │   └── note.py                # Note model
+   │   └── repositories/
+   │       ├── __init__.py
+   │       └── note_repository.py     # Repository interface for notes
+   ├── use_cases/
+   │   ├── __init__.py
+   │   └── note_use_cases.py          # Business logic and use cases (CRUD)
+   ├── interface_adapters/
+   │   ├── __init__.py
+   │   └── mongo_note_repository.py   # MongoDB repository implementation for notes
+   ├── frameworks/
+   │   ├── __init__.py
+   │   ├── database.py                # MongoDB configuration and connection
+   │   └── cli.py                     # Command-line interface (CLI)
+   ├── main.py                        # Entry point for the application
+   └── requirements.txt               # Python dependencies
 
 
 ## Requirements
