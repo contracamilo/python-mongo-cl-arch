@@ -66,8 +66,8 @@ The project is structured based on **Clean Architecture** principles, separating
 
 4. **Create a .env file in the project root with the following content**:
     ```plaintext
-    MONGO_URI=mongodb://localhost:27017
-    DATABASE_NAME=note_manager_db
+    MONGO_URI=<your-connection-string>
+    DATABASE_NAME=<your-db-name>
 
 5. **Run the Application**:
     ```bash
