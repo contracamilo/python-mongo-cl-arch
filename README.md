@@ -36,7 +36,7 @@ The project is structured based on **Clean Architecture** principles, separating
    │   └── cli.py                     # Command-line interface (CLI)
    ├── main.py                        # Entry point for the application
    └── requirements.txt               # Python dependencies
-
+   ```
 
 ## Requirements
 
