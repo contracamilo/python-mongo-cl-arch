@@ -1,0 +1,24 @@
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment variables file
+.env
+
+# PyCharm and VS Code configuration files
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# macOS and Linux temporary files
+.DS_Store
+.cache/
+Thumbs.db
