@@ -62,9 +62,9 @@ The project is structured based on **Clean Architecture** principles, separating
 3. **Install Dependencies**:
     ```bash
     pip install -r requirements.txt
-    Configure Environment Variables:
 
-4. **Create a .env file in the project root with the following content**:
+
+4. **Configure Environment Variables: Create a .env file in the project root with the following content**:
     ```plaintext
     MONGO_URI=<your-connection-string>
     DATABASE_NAME=<your-db-name>
